@@ -7,5 +7,7 @@ public class Main {
 
         double sum = Calculator.add(3,5,6,8,9.0);
         System.out.println("Sum id: " + sum);
+
     }
+
 }
