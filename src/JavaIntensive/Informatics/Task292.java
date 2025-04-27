@@ -1,5 +1,5 @@
 
-
+package JavaIntensive.Informatics;
 import java.util.Scanner;
 /*Входные данные
 Даны два целых числа, каждое число записано в отдельной строке.
