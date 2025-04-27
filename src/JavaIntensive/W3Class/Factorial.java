@@ -1,4 +1,4 @@
-package JavaIntensive.recursion;
+package JavaIntensive.W3Class;
 
 public class Factorial {
     public static int factorial(int n){
@@ -12,7 +12,8 @@ public class Factorial {
     public static void main(String[] args) {
         //factorial(5) = factorial(4) * 5
         //factorial(4) = factorial(3) * 4
-        System.out.println(factorial(5));
+        System.out.println(factorial(5)); //1*2*3*4*5=120
+        System.out.println(factorialWithLoops(3));
     }
     public static int factorialWithLoops(int n){
         int result = 1;

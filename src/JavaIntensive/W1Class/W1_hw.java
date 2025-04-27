@@ -1,4 +1,4 @@
-package JavaIntensive;
+package JavaIntensive.W1Class;
 
 import java.io.BufferedReader;
 import java.io.IOException;
