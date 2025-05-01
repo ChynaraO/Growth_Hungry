@@ -30,5 +30,8 @@ public class Task258 {
         } else {
             System.out.println("NO");
         }
-    }
+    }       //  TRUE   &  TRUE
+    //        (k < m*n & (k%n==0 | k%m==0))
+
+    //        ( (k < m*n)  &  (k%n==0 | k%m==0) )
 }
