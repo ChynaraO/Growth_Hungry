@@ -12,7 +12,11 @@ public class Fibonacci {
         if(n==2){
             return 1;
         }
-        return f(n-1) + f(n-2);
+        return f(n-1) + f(n-2); // f(5) + f(4)
+        // f(4) + f(3) + f(3) + f(2)
+        // f(3) + f(2) + f(2) + f(1) + f(2) + f(1) + f(2)
+        // f(2) + f(1 )
+
     }
 
     public static void main(String[] args) {

@@ -1,6 +1,8 @@
 
+package JavaIntensive.Informatics;
 
-import java.util.Locale;
+
+
 import java.util.Scanner;
 
 public class Task259 {
@@ -33,13 +35,15 @@ public class Task259 {
         Scanner scanner = new Scanner(System.in);
         int k = scanner.nextInt();
 
-        if (k % 4 == 0 && k >= 4) {
+        if (k == 1) {
             System.out.println("YES");
         } else {
-            System.out.println("NO");
+            if ((k + 4) % 4 == 0) {
+                System.out.println("YES");
+            } else {
+                System.out.println("NO");
+            }
         }
-
     }
-
-
 }
+

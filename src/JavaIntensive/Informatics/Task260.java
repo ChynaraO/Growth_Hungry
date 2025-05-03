@@ -1,3 +1,4 @@
+package JavaIntensive.Informatics;
 
 
 import java.util.Scanner;
@@ -26,17 +27,20 @@ public class Task260 {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
 
-        if (a == 0 & b != 0){
-            System.out.println("NO");
-        }else if (a==0 & b==0){
-            System.out.println("INF");
-        } else {
-            int x = -b / a;
-            if (-b % a == 0) {
-                System.out.println(x);
+        if (a == 0) {
+            if (b == 0) {
+                System.out.println("INF");  // Бесконечно много решений
             } else {
-                System.out.println("NO");
+                System.out.println("NO");   // Нет решений
+            }
+        } else {
+            if (b % a == 0) {
+                System.out.println(-b / a);  // Единственное решение
+            } else {
+                System.out.println("NO");     // Нет целых решений
             }
         }
+
+        scanner.close();
     }
 }
