@@ -1,3 +1,4 @@
+package JavaIntensive.Informatics;
 
 import java.util.Scanner;
 
