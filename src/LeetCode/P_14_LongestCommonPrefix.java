@@ -17,6 +17,8 @@ public class P_14_LongestCommonPrefix {
 
 
 
+
+
     public static void main(String[] args) {
         String [] s = {"Flower", "Flow", "Flash"};
         System.out.println(longestCommonPrefix(s));
