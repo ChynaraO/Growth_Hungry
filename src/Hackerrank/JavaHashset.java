@@ -11,10 +11,7 @@ public class JavaHashset {
 
         HashSet<String> pairs = new HashSet<>();
         for(int i = 0; i<n; i++){
-            String first = sc.next();
-            String second = sc.next();
-            String pair = first + " " + second;
-            pairs.add(pair);
+            pairs.add(sc.next() + " " + sc.next());
             System.out.println(pairs.size());
         }
         sc.close();
