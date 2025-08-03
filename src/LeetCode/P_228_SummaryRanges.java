@@ -32,7 +32,7 @@ public class P_228_SummaryRanges {
 
 
     public static void main(String[] args) {
-        int [] nums = {1,2,4,5,7,9};
+        int [] nums = {1,2,4,5,7,9, 10};
         System.out.println(summaryRanges(nums));
     }
 }
