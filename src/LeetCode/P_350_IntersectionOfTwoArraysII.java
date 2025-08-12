@@ -6,16 +6,14 @@ import java.util.List;
 
 public class P_350_IntersectionOfTwoArraysII {
         public static int[] intersect(int[] nums1, int[] nums2) {
-            int[] min = (nums1.length <= nums2.length) ? nums1 : nums2;
-            int[] max = nums1.length > nums2.length ? nums1 : nums2;
-            List<Integer> list = new ArrayList<>();
-            int index = 0;
 
-            for(int i = 0; i<min.length; i++){
-                for(int j = 0; j<max.length; j++){
-                    if(min[i]==max[j] ){
-                        list.add(max[j]);
-                        max[j] = -1;
+            List<Integer> list = new ArrayList<>();
+
+            for(int i = 0; i<nums1.length; i++){
+                for(int j = 0; j<nums2.length; j++){
+                    if(nums1[i]==nums2[j] ){
+                        list.add(nums2[j]);
+                        nums2[j] = -1;
                         break;
                     }
                 }
