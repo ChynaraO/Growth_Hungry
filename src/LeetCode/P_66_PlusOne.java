@@ -2,10 +2,30 @@ package LeetCode;
 
 import java.util.Arrays;
 
-public class P_66_PlusOne {/*
+public class P_66_PlusOne {
+    public static int[] plusOne1(int[] digits) {
+    int len = digits.length;
+    //digits = [4,3,2,1]
+    for(int i = len-1; i>=0; i--){
+        if(digits[i]<9){
+            digits[i]++; // 2
+            return digits;
+        } else {
+            digits[i] = 0;
+        }
+    }
+        int [] res = new int[len+1];
+    res[0]=1;
+
+    return res;
+
+    }
+        /*
+
 You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.
 
 Increment the large integer by one and return the resulting array of digits.
+
 
 
 
@@ -31,6 +51,7 @@ Explanation: The array represents the integer 9.
 Incrementing by one gives 9 + 1 = 10.
 Thus, the result should be [1,0].
 */
+
     public static int[] plusOne(int[] digits) {
         int n = digits.length;
 
@@ -49,7 +70,7 @@ Thus, the result should be [1,0].
     }
 
     public static void main(String[] args) {
-        int [] nums = {9};
-        System.out.println(Arrays.toString(plusOne(nums)));
+        int [] nums = {4,3,2,9};
+        System.out.println(Arrays.toString(plusOne1(nums)));
     }
 }
