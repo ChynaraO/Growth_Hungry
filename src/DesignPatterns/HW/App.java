@@ -3,11 +3,13 @@ package DesignPatterns.HW;
 //import ComputerSystemsAndIndustrialProgramming.November.BuilderExample.FastfoodRestaurantBuiler;
 import DesignPatterns.HW.BuilderExample.Animal;
 import DesignPatterns.HW.BuilderExample.AnimalBuilder;
+import DesignPatterns.HW.BuilderExample.FastFoodRestaurantBuilder;
 import DesignPatterns.HW.CacheImpl.CacheTypeEnum;
 import DesignPatterns.HW.CacheImpl.FIFOCache;
 import DesignPatterns.HW.CacheImpl.LRUCache;
 import DesignPatterns.HW.CacheImpl.LRUCacheBuilder;
 import DesignPatterns.HW.Interfaces.ICache;
+import DesignPatterns.BuilderExample.FastFoodRestaurant;
 
 public class App {
     public static void main(String[] args) {
@@ -15,6 +17,13 @@ public class App {
         testFIFOWithFactory();
         testLRUCashBuilder();
         testAnimal();
+        testFFRB();
+    }
+    private static void testFFRB(){
+        FastFoodRestaurantBuilder fbuilder = new FastFoodRestaurantBuilder();
+        FastFoodRestaurant f1 = fbuilder.buildCristmasMenu().build();
+        FastFoodRestaurantBuilder fbuilder2 = new FastFoodRestaurantBuilder();
+        FastFoodRestaurant f2 = fbuilder2.buildKidsMenu().buildCristmasMenu().build();
     }
     private static void testAnimal(){
         AnimalBuilder builder = new AnimalBuilder();
