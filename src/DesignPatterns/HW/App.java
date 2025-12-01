@@ -1,6 +1,8 @@
 package DesignPatterns.HW;
 
 //import ComputerSystemsAndIndustrialProgramming.November.BuilderExample.FastfoodRestaurantBuiler;
+import DesignPatterns.HW.BuilderExample.Animal;
+import DesignPatterns.HW.BuilderExample.AnimalBuilder;
 import DesignPatterns.HW.CacheImpl.CacheTypeEnum;
 import DesignPatterns.HW.CacheImpl.FIFOCache;
 import DesignPatterns.HW.CacheImpl.LRUCache;
@@ -12,6 +14,13 @@ public class App {
         testFIFO();
         testFIFOWithFactory();
         testLRUCashBuilder();
+        testAnimal();
+    }
+    private static void testAnimal(){
+        AnimalBuilder builder = new AnimalBuilder();
+        Animal dog = builder.setAge(5).setHeight(6).build();
+        AnimalBuilder builderGiraffe = new AnimalBuilder();
+        Animal giraffe = builderGiraffe.setHeight(6).build();
     }
     private static void testLRUCashBuilder(){
         LRUCacheBuilder lruCacheBuilder = new LRUCacheBuilder(15);
