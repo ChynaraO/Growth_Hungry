@@ -1,4 +1,4 @@
-package DesignPatterns.Structural.Composite;
+package DesignPatterns.Structural.Composite.Example1;
 
 
 //component

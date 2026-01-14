@@ -1,4 +1,4 @@
-package DesignPatterns.Structural.Composite;
+package DesignPatterns.Structural.Composite.Example1;
 
 //Treats groups of objects the same as individual objects (tree structures).
 

@@ -1,4 +1,4 @@
-package DesignPatterns.Structural.Composite;
+package DesignPatterns.Structural.Composite.Example1;
 //leaf
 class File implements FileSystemItem{
     private String name;
