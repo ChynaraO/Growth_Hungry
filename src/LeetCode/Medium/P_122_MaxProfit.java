@@ -15,7 +15,7 @@ public class P_122_MaxProfit {
        }
         return profit;
     }
-    public static int maxProfitFromShabbdan(int[] prices) {
+    public static int maxProfitFromShabdan(int[] prices) {
         int profit=0;
 
         for(int i=1; i<prices.length; i++){
@@ -33,6 +33,6 @@ public class P_122_MaxProfit {
 
         System.out.println(MaxProfit(nums));//7
         System.out.println(MaxProfit(nums1));//4
-        System.out.println(maxProfitFromShabbdan(nums2));//0
+        System.out.println(maxProfitFromShabdan(nums2));//0
     }
 }
